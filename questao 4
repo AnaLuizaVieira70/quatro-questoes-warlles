@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int velocidade;
+
+    printf("Com qual velocidade você costuma dirigir seu carro (km/h)? ");
+    scanf("%d", &velocidade);
+
+    if (velocidade > 75) {
+        printf("Você está preso!\n");
+    } else {
+        if (velocidade > 65) {
+            printf("Multa e pontos na carteira!\n");
+        } else {
+            if (velocidade == 55) {
+                printf("Velocidade perfeita, continue assim!\n");
+            } else {
+                if (velocidade > 45) {
+                    printf("Acelera mais um pouco!\n");
+                } else {
+                    printf("Você está atrapalhando o trânsito!\n");
+                }
+            }
+        }
+    }
+
+    return 0;
+}
