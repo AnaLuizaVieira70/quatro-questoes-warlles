@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int i = 1, j;
+    int contador = 1;
+    int limite = 21;
+
+    while (contador <= limite) {
+        for (j = 1; j <= i; j++) {
+            if (contador > limite) {
+                break;
+            }
+            printf("%2d ", contador);
+            contador++;
+        }
+        printf("\n");
+        i++;
+    }
+
+    return 0;
+}
